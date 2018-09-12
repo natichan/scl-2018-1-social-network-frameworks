@@ -78,22 +78,7 @@ class InputAdornments extends React.Component {
             startAdornment: <InputAdornment position="start">Kg</InputAdornment>,
           }}
         />
-        <TextField
-          select
-          label="With Select"
-          className={classNames(classes.margin, classes.textField)}
-          value={this.state.weightRange}
-          onChange={this.handleChange('weightRange')}
-          InputProps={{
-            startAdornment: <InputAdornment position="start">Kg</InputAdornment>,
-          }}
-        >
-          {ranges.map(option => (
-            <MenuItem key={option.value} value={option.value}>
-              {option.label}
-            </MenuItem>
-          ))}
-        </TextField>
+
         <FormControl fullWidth className={classes.margin}>
           <InputLabel htmlFor="adornment-amount">Amount</InputLabel>
           <Input
