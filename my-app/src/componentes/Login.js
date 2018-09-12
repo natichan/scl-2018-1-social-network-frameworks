@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import '../App.css';
-import Navbar from './componentesWall/Navbar'
+import ButtonFG from './componentesLogin/ButtonFG'
 
-class App extends Component {
+class Login extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar />
+        <ButtonFG />
       </div>
     );
   }
 }
 
-export default App;
+export default Login;
