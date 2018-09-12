@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Img from './componentesLogin/Img';
 import ImagenLogo from '../assets/img/logo.png'
 
-class App extends Component {
+class Login extends Component {
   render() {
     return (
       <div>
@@ -12,4 +12,4 @@ class App extends Component {
   };
 };
 
-export default App;
+export default Login;
