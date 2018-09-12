@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import Navbar from './componentesWall/Navbar';
 import Img from './componentesLogin/Img';
+import ImagenLogo from '../assets/img/logo.png'
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Navbar />
-        <Img photo="../assets/img/logo.png" />
+        <Img photo= {ImagenLogo} />
       </div>
     );
   };
