@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import '../App.css';
-import Navbar from './componentesWall/Navbar'
+import Navbar from './componentesWall/Navbar';
+import Img from './componentesLogin/Img';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div>
         <Navbar />
+        <Img photo="../assets/img/logo.png" />
       </div>
     );
-  }
-}
+  };
+};
 
 export default App;
