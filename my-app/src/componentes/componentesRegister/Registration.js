@@ -68,17 +68,6 @@ class InputAdornments extends React.Component {
 
     return (
       <div className={classes.root}>
-        <TextField
-          label="With normal TextField"
-          id="simple-start-adornment"
-          className={classNames(classes.margin, classes.textField)}
-          InputProps={{
-            startAdornment: <InputAdornment position="start">Kg</InputAdornment>,
-          }}
-        />
-
-
-
         <FormControl className={classNames(classes.margin, classes.textField)}>
           <InputLabel htmlFor="adornment-password">Password</InputLabel>
           <Input
