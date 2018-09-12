@@ -77,15 +77,7 @@ class InputAdornments extends React.Component {
           }}
         />
 
-        <FormControl fullWidth className={classes.margin}>
-          <InputLabel htmlFor="adornment-amount">Amount</InputLabel>
-          <Input
-            id="adornment-amount"
-            value={this.state.amount}
-            onChange={this.handleChange('amount')}
-            startAdornment={<InputAdornment position="start">$</InputAdornment>}
-          />
-        </FormControl>
+
 
         <FormControl className={classNames(classes.margin, classes.textField)}>
           <InputLabel htmlFor="adornment-password">Password</InputLabel>
