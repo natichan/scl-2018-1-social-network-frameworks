@@ -103,21 +103,7 @@ class InputAdornments extends React.Component {
             startAdornment={<InputAdornment position="start">$</InputAdornment>}
           />
         </FormControl>
-        <FormControl
-          className={classNames(classes.margin, classes.withoutLabel, classes.textField)}
-          aria-describedby="weight-helper-text"
-        >
-          <Input
-            id="adornment-weight"
-            value={this.state.weight}
-            onChange={this.handleChange('weight')}
-            endAdornment={<InputAdornment position="end">Kg</InputAdornment>}
-            inputProps={{
-              'aria-label': 'Weight',
-            }}
-          />
-          <FormHelperText id="weight-helper-text">Weight</FormHelperText>
-        </FormControl>
+
         <FormControl className={classNames(classes.margin, classes.textField)}>
           <InputLabel htmlFor="adornment-password">Password</InputLabel>
           <Input
