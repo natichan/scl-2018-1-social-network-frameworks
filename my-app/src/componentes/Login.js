@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
-import '../App.css';
-import Navbar from './componentesWall/Navbar'
+import Img from './componentesLogin/Img';
+import ImagenLogo from '../assets/img/logo.png'
 
-class App extends Component {
+class Login extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar />
+      <div>
+        <Img photo= {ImagenLogo} />
       </div>
     );
-  }
-}
+  };
+};
 
-export default App;
+export default Login;
