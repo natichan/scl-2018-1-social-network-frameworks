@@ -1,5 +1,9 @@
-root {
+.InputPassword{
     display: 'flex';
-    flexWrap: 'wrap';
+    flex-wrap: 'wrap';
+    background-color: red;
   }
- 
+.Divtxt{
+  text-align: center;
+  margin-top: 20%;
+}
