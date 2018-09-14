@@ -7,7 +7,7 @@ class RegisterButton extends Component {
     render() {
         return (
          <div className='body'>
-            <a waves='light' className= 'register' node='a' href=''> Regístrate </a>
+            <a waves='light' className= 'register' node='a' href=''> Register </a>
          </div>
         )
     }
