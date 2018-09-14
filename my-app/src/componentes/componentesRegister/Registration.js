@@ -2,6 +2,7 @@ import React from 'react';
 import './Register.css';
 import {Row, Input} from 'react-materialize'
 import {Col} from 'react-materialize'
+import CardPanel from 'react-materialize'
 
 class InputAdornments extends React.Component {
 
