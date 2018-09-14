@@ -6,13 +6,16 @@
     text-align: center;
 
 }
+.facebook, .google {
+    margin: 1em;
+    height: 2.5em;
+    width: 15em;
+}
 .facebook{
     background-color: #3b5998 !important;
-    margin: 1em;
 }
 .google{
     background-color: #db4a39 !important;
-    margin: 1em;
 }
 .input{
     text-align: center;
