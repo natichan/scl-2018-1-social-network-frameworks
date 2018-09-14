@@ -28,26 +28,16 @@ class InputAdornments extends React.Component {
   render() {
 
     return (
-      <div className='Divtxt'>
-      <TextField
-        className="InputPassword"
-        label="Corrreo"
-        InputProps={{
-          startAdornment: (
-            <InputAdornment position="start">
-              <AccountCircle />
-            </InputAdornment>
-          ),
-        }}
-      />
-    
-      </div>
+<Row>
+    <Input placeholder="Placeholder" s={6} label="First Name" />
+    <Input s={6} label="Last Name" />
+    <Input s={12} label="disabled" defaultValue="I am not editable" disabled />
+    <Input type="password" label="password" s={12} />
+    <Input type="email" label="Email" s={12} />
+</Row>
+     
     );
   }
 }
-
-InputAdornments.propTypes = {
-  classes: PropTypes.object.isRequired,
-};
 
 export default InputAdornments;
