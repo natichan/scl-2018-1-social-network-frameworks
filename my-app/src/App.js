@@ -8,11 +8,8 @@ class App extends Component {
   render() {
     return (
     <div>
-<<<<<<< HEAD
         <Register />
     <div>
-=======
->>>>>>> 046bcaac163e6df8647f9ca463d9e988672428cb
         <Login />
       </div>
     </div>
