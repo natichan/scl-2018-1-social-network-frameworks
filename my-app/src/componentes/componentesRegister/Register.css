@@ -2,14 +2,15 @@
 .ButtonLarge1{
 width: 100%;
 text-align: center;
-background-color: #6ea328;
+background-color: #6ea328 !important;
 
 }
-.ButtonLarge{
+.divboton{
   margin-top: 7%;
 
 }
 .card{
   height: 50%;
-  margin: 0% 20%;
+  margin: 5% 20%;
+
 }
