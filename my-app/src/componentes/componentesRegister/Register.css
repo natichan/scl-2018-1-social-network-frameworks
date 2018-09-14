@@ -1,6 +1,3 @@
-.example{
-padding: 0% 20%;
-}
 
 .ButtonLarge1{
 width: 100%;
@@ -11,4 +8,8 @@ background-color: green;
 .ButtonLarge{
   margin-top: 7%;
 
+}
+.card{
+  height: 50%;
+  margin: 0% 20%;
 }
