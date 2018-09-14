@@ -2,3 +2,18 @@
     height: 8em;
     margin-top: 3em;
 }
+.body{
+    text-align: center;
+
+}
+.facebook{
+    background-color: blue !important;
+    margin: 1em;
+}
+.google{
+    background-color: red !important;
+    margin: 1em;
+}
+.input{
+    text-align: center;
+}
