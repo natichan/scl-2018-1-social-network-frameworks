@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
-import Registration from './componentesRegister/Registration'
-import Img from './../componentes/componentesLogin/Img'
-import ImagenLogo from './../assets/img/logo.png'
+import Registration from './componentesRegister/Registration';
+import Img from './../componentes/componentesLogin/Img';
+import ImagenLogo from './../assets/img/logo.png';
+import {Row, Card, Col} from 'react-materialize';
 
 
 class Register extends Component {
     render() {
       return (
-        <div className="App">
+        <Row className="App">
+        <Col s={12}>
+        <Card className='card'>
           <Img photo= {ImagenLogo}/>
           <Registration />
-        </div>
+       </Card> 
+       </Col>
+       </Row>
       );
     }
   }
