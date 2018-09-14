@@ -24,24 +24,8 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 // ];
 
 class InputAdornments extends React.Component {
-  state = {
-    password: '',
-  };
-
-  handleChange = prop => event => {
-    this.setState({ [prop]: event.target.value });
-  };
-
-  handleMouseDownPassword = event => {
-    event.preventDefault();
-  };
-
-  handleClickShowPassword = () => {
-    this.setState(state => ({ showPassword: !state.showPassword }));
-  };
 
   render() {
-    const { classes } = this.props;
 
     return (
       <div className='Divtxt'>
