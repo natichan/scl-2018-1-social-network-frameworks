@@ -7,18 +7,15 @@ class InputAdornments extends React.Component {
 
   render() {
 
-    return (
-    <Row >
+    return (    
+      
+    <Row className="example">
     <Col s={12} className='grid-example'>
-      <Input type="email" label="Email" s={6} />
+        <Input s={12} type="password" label="password" />
+        <Input s={12} type="email" label="Email" />
     </Col>
-    <Col s={12} className='grid-example'>
-      <Input type="password" label="password" s={6} />
-    </Col>
-
     </Row>
     );
-  
   }
 }
 
