@@ -13,9 +13,9 @@ class InputAdornments extends React.Component {
     <Col s={12}>
       <Input s={12} type="email" label="Email"><Icon>account_circle</Icon></Input>
       <Input s={12} type="password" label="password" ><Icon>lock</Icon></Input>
-      <Row  className='ButtonLarge'>
-      <Button className='ButtonLarge1' waves='light' node='a' href='http://www.google.com'> REGISTRATE </Button>
-      </Row>
+        <Col s={12} className='ButtonLarge'>
+          <Button className='ButtonLarge1' waves='light' node='a' href='http://www.google.com'> REGISTRATE </Button>
+        </Col>
     </Col>
     </Row>
     );
