@@ -1,9 +1,10 @@
 import React from 'react';
+import './Login.css'
 
 
 const Img = (props) => {
   return (
-    <img src= {props.photo} alt='' className= "Logo"/>
+    <img src= {props.photo} alt='' className="Logo" />
   );
 };
 
