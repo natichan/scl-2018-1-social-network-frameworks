@@ -14,8 +14,8 @@ class InputAdornments extends React.Component {
         <Input s={12} type="email"label="Email">
           <Icon>account_circle</Icon>
         </Input>
-        <Input  s={12} type="password" label="password">
-          <Icon className='iconb'>lock</Icon>
+        <Input  s={12} type="password" label="Password">
+          <Icon >lock</Icon>
         </Input>
       </Col>
       <Col s={12} className='divboton'>
