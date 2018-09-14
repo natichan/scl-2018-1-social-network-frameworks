@@ -6,7 +6,7 @@ class Login extends Component {
   render() {
     return (
       <div>
-        <Img photo= {ImagenLogo} style= {styles}/>
+        <Img photo= {ImagenLogo}/>
       </div>
     );
   };
