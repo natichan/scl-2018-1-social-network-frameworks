@@ -10,7 +10,7 @@ class Register extends Component {
       return (
         <Row className="App">
         <Col s={12}>
-        <Card className='card'>
+        <Card  className='card'>
           <Img photo= {ImagenLogo}/>
           <Registration />
        </Card> 
