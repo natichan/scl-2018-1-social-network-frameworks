@@ -8,13 +8,13 @@ import {Row, Card, Col} from 'react-materialize';
 class Register extends Component {
     render() {
       return (
-        <Row className="App">
-        <Col s={12}>
-        <Card  className='card'>
-          <Img photo= {ImagenLogo}/>
-          <Registration />
-       </Card> 
-       </Col>
+        <Row>
+          <Col s={12}>
+            <Card  className='card'>
+              <Img photo= {ImagenLogo}/>
+              <Registration />
+          </Card> 
+        </Col>
        </Row>
       );
     }
