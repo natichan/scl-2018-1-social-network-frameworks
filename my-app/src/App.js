@@ -4,13 +4,15 @@ import './App.css';
 import Register from './componentes/Register';
 //import Wall from './componentes/Wall';
 
-
 class App extends Component {
   render() {
     return (
-    <div className="App">
+    <div>
         <Register />
+    <div>
+        <Login />
       </div>
+    </div>
     );
   }
 }
