@@ -6,14 +6,23 @@
     text-align: center;
 
 }
-.facebook{
-    background-color: blue !important;
+.facebook, .google {
     margin: 1em;
+    height: 2.5em;
+    width: 15em;
+}
+.facebook{
+    background-color: #3b5998 !important;
 }
 .google{
-    background-color: red !important;
-    margin: 1em;
+    background-color: #db4a39 !important;
 }
 .input{
     text-align: center;
+}
+.example{
+    padding: 0% 20%;
+}
+.register{
+    font-size: 1.5em;
 }

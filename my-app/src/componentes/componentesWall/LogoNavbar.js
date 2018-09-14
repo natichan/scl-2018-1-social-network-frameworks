@@ -1,11 +1,10 @@
 import React from 'react';
-import './Login.css';
-
+import './wall.css';
 
 const Img = (props) => {
   return (
     <div className='body'>
-    <img src= {props.photo} alt='' className="Logo" />
+    <img src= {props.photo} alt='' className="logo" />
     </div>
   );
 };
