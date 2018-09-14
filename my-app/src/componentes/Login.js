@@ -3,6 +3,7 @@ import Img from './componentesLogin/Img';
 import ImagenLogo from '../assets/img/logo.png'
 import Button from './componentesLogin/ButtonFG'
 import Init from './componentesLogin/Init'
+import RegisterButton from './componentesLogin/RegisterButton';
 
 
 class Login extends Component {
@@ -12,6 +13,7 @@ class Login extends Component {
         <Img photo= {ImagenLogo}/>
         <Init />
         <Button />
+        <RegisterButton />
       </div>
     );
   };
