@@ -9,9 +9,6 @@ class App extends Component {
     return (
     <div>
         <Register />
-    <div>
-        <Login />
-      </div>
     </div>
     );
   }
