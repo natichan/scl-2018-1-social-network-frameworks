@@ -1,10 +1,18 @@
 .logo{
-    height: 5em;
+    height: 2em;
 }
 .navbar{
     background-color: #6ea328;
-    height: 5em;
 }
-.box{
+.icon{
+    font-size: 55px;
+    color: rgba(0, 0, 0, 0.651);
+}
+
+@media (min-width: 1000px) {
+    .textIcon{
+        display: none;
+    }
+}.box{
     height: 10%;;
 }
