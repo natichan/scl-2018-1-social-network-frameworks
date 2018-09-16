@@ -8,11 +8,11 @@
     font-size: 55px;
     color: rgba(0, 0, 0, 0.651);
 }
-
+.box{
+    height: 10%;;
+}
 @media (min-width: 1000px) {
     .textIcon{
         display: none;
     }
-}.box{
-    height: 10%;;
 }
