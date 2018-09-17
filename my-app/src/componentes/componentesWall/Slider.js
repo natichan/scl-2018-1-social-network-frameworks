@@ -8,23 +8,19 @@ import imgJ from './../../assets/img/green-kitchen-stories-meal-inspiration.jpg'
 class App extends Component {
     render() {
       return (
-  <Row>
-       <Slider>
-  <Slide
-    src={imgh} >
-  </Slide>
-  <Slide
-    src={imgI}
-
-    >
-  </Slide>
-  <Slide
-    src={imgJ}
-   
-   >
-  </Slide>
-</Slider> 
-  </Row> 
+        <Row>
+          <Slider>
+            <Slide
+              src={imgh} >
+            </Slide>
+            <Slide
+              src={imgI}>
+            </Slide>
+            <Slide
+              src={imgJ}>
+            </Slide>
+          </Slider> 
+        </Row> 
       );
     }
   }
