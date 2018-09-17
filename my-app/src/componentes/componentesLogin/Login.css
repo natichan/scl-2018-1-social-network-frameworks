@@ -4,25 +4,47 @@
 }
 .body{
     text-align: center;
-
 }
 .facebook, .google {
     margin: 1em;
     height: 2.5em;
     width: 15em;
+    text-align: center;
 }
 .facebook{
-    background-color: #3b5998 !important;
+    background-color: #3b5998;
 }
 .google{
-    background-color: #db4a39 !important;
+    background-color: #db4a39;
 }
 .input{
     text-align: center;
 }
 .example{
-    padding: 0% 20%;
+    padding: 0% 30%;
 }
 .register{
     font-size: 1.5em;
+}
+.ButtonLarge1 {
+    width: 100%;
+    text-align: center;
+    background-color: #6ea328;
+    margin-top: 7%;
+}
+.card{
+    height: 50%;
+    margin: 0%;
+    margin-top: 3%;
+}
+@media (max-width: 640px) {
+    .example{
+        padding: 0% 5%;
+    }
+    .facebook, .google{
+        margin: 1em;
+        height: 2.5em;
+        width: 8em;
+        padding: 1%;
+    }
 }
