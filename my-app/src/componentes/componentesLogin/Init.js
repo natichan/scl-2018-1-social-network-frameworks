@@ -1,7 +1,6 @@
 import React from 'react';
 import './Login.css';
-import {Row, Input, Icon, Button} from 'react-materialize'
-import {Col} from 'react-materialize'
+import {Row, Input, Icon, Button, Col} from 'react-materialize'
 
 class InputAdornments extends React.Component {
 
