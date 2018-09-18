@@ -11,9 +11,6 @@
 .box{
     height: 10%;
 }
-.body{
-    text-align: center;
-}
 @media (min-width: 1000px) {
     .textIcon{
         display: none;
