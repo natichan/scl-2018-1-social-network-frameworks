@@ -14,7 +14,7 @@ class Profile extends Component {
             <Row>
               <Col s={12}>
                 <Card className='card'>
-            <Form />
+                <Form />
             </Card>
               </Col> 
             </Row>
