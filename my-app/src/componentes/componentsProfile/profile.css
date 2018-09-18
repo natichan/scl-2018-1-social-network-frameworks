@@ -1,6 +1,7 @@
 .picture {
+    margin-top: 2%;
     border-radius: 150px;
-    height: 300px !important;
+    height: 300px;
 }
 .body{
     align-items: center;
