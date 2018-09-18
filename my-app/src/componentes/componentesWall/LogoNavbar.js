@@ -3,7 +3,7 @@ import './wall.css';
 
 const Img = (props) => {
   return (
-    <div className='body'>
+    <div>
     <img src= {props.photo} alt='' className="logo" />
     </div>
   );
