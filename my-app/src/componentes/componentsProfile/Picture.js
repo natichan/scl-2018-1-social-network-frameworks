@@ -3,8 +3,8 @@ import './profile.css';
 
 const Picture = (props) => {
   return (
-    <div>
-    <img src= {props.photo} alt='' className='picture' />
+    <div className="body">
+    <img src= {props.photo} alt='' className="picture" />
     </div>
   );
 };
