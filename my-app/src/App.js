@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 //import Login from './componentes/Login';
 // import Register from './componentes/Register';
-import Wall from './componentes/Wall';
+//import Wall from './componentes/Wall';
+import Profile from './componentes/Profile'
 //import Post from './componentes/componentesWall/Post';
+
 
 class App extends Component {
   render() {
@@ -11,7 +13,8 @@ class App extends Component {
     <div>
         {/* <Register /> */}
         {/* <Login /> */}
-        <Wall /> 
+        {/* <Wall /> */}
+        <Profile />
         {/* <Post/> */}
     </div>
     );

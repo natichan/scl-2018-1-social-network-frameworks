@@ -5,7 +5,7 @@ import Slider from './componentesWall/Slider'
 class Wall extends Component {
     render() {
       return (
-        <div className="App">
+        <div>
           <Navbar />
           <Slider/>
         </div> 
