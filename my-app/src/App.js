@@ -3,6 +3,7 @@ import './App.css';
 //import Login from './componentes/Login';
 // import Register from './componentes/Register';
 import Wall from './componentes/Wall';
+//import Post from './componentes/componentesWall/Post';
 
 class App extends Component {
   render() {
@@ -10,7 +11,8 @@ class App extends Component {
     <div>
         {/* <Register /> */}
         {/* <Login /> */}
-        <Wall />
+        <Wall /> 
+        {/* <Post/> */}
     </div>
     );
   }
