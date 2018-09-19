@@ -8,7 +8,8 @@ import Friends from './componentes/Friends';
 import Navigation from './componentes/Navigation'
 import * as routes from './constants/routes';
 
-const App = () =>
+const App = () => {
+  return (
   <Router>
     <div>
       <Navigation />
@@ -35,5 +36,6 @@ const App = () =>
       />
     </div>
   </Router>
-
+  )
+}
 export default App;
