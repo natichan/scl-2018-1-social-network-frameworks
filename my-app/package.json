@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^5.5.0",
+    "gh-pages": "^2.0.0",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-materialize": "^2.4.5",
@@ -12,6 +13,8 @@
   },
   "homepage": "https://myusername.github.io/my-app",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
