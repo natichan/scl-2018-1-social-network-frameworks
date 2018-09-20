@@ -3,6 +3,7 @@ import Registration from './componentesRegister/Registration';
 import Img from './../componentes/componentesLogin/Img';
 import ImagenLogo from './../assets/img/logo.png';
 import {Row, Card, Col} from 'react-materialize';
+import './componentesRegister/Register.css'
 
 
 class Register extends Component {
