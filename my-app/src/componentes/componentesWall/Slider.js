@@ -4,8 +4,6 @@ import {Row, Slider, Slide, Col, Input, Button} from 'react-materialize'
 import imgh from './../../assets/img/veganHamburguer.jpg'
 import imgI from './../../assets/img/vegan-food-selection-t.jpg'
 import imgJ from './../../assets/img/green-kitchen-stories-meal-inspiration.jpg'
-import LogoNavbar from './LogoNavbar';
-import ImageLogo from '../../assets/img/logotipoHorizontalBordeBlanco (1).png'
 
 import './wall.css'
 class App extends Component {
