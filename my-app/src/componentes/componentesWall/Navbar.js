@@ -1,42 +1,46 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Navbar,NavItem, Icon} from 'react-materialize';
 import LogoNavbar from './LogoNavbar';
 import ImageLogo from '../../assets/img/logotipoHorizontalBordeBlanco (1).png'
 import './wall.css'
-import { Link } from 'react-router-dom';
-import * as routes from '../../constants/routes';
+import fire from '../../config/firebase';
 
-const NavbarComponent = () => {
-    return (
-    <Navbar brand={<LogoNavbar photo = {ImageLogo} />} className="navbar" right>   
-        <ul>
-           <li> 
-               <Link to={routes.WALL}>
+
+class NavbarComponent extends Component {
+    constructor(props) {
+        super(props);
+        this.logout = this.logout.bind(this);
+    }
+
+    logout() {
+        fire.auth().signOut();
+    }
+    
+    render() {
+        return (
+            <Navbar brand={<LogoNavbar photo = {ImageLogo} />} className="navbar" right>   
+                <NavItem >
                     <Icon>home</Icon>
                     <p className="textIcon">Wall</p>
-                </Link>
-            </li>    
-            <li>
-                <Link to={routes.PROFILE}>
+                </NavItem>
+            
+                <NavItem >
                     <Icon>person</Icon>
                     <p className="textIcon">Profile</p>
-                </Link>
-            </li>
-            <li>  
-                <Link to={routes.FRIENDS}>
+                </NavItem>
+
+                <NavItem >
                     <Icon>person_add</Icon>
                     <p className="textIcon">Friends</p>
-                </Link>
-            </li>
-            <li>  
-                <Link to={routes.LOGIN}>
+                </NavItem>
+
+                <NavItem onClick={this.logout} >
                     <Icon>keyboard_tab</Icon>
                     <p className="textIcon">Log out</p>
-                </Link>
-            </li>    
-        </ul>
-    </Navbar>
-    )
+                </NavItem>
+            </Navbar>
+        )
+    }
 }  
 
 export default NavbarComponent;
