@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import './Login.css'
+import {Link} from 'react-router-dom';
 
 
 class RegisterButton extends Component {
     render() {
         return (
-         <div className='body'>
-            <a waves='light' className= 'register' node='a' href=''> Register </a>
-         </div>
+            <Link to="/Register">Register</Link>
         )
     }
 }
