@@ -1,14 +1,26 @@
 import React, { Component } from 'react';
-import {Button} from 'react-materialize';
 import './Login.css';
+import firebase from 'firebase';
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
+
 
 class ButtonsFaceGoo extends Component {
+  uiConfig = {
+    signInFlow: "popup",
+    signInOptions: [
+      firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+      firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+    ],
+    callbacks: {
+      signInSuccessWithAuthResult : () => false
+    }
+  }
   render() {
     return (
-        <div className='body'>
-            <Button waves='light' className='facebook' node='a' href=''> Facebook </Button>
-            <Button waves='light' className='google' node='a' href=''> Google </Button>
-        </div>
+      <StyledFirebaseAuth
+      uiConfig={this.uiConfig}
+      firebaseAuth={firebase.auth()}
+    />  
     );
   }
 }

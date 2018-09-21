@@ -30,7 +30,7 @@ class Auth extends Component {
     return (
      <div>
      {this.state.user ? ( <Wall/>) : (<Login />)} 
-     {/* si existe usuario anda al muro, sino muestra la iniciar sesión */}
+     {/* si existe usuario anda al muro, sino muestra iniciar sesión */}
      </div>
     )
   }
