@@ -1,15 +1,19 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Login.css'
+import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import Register from '../Register';
+import './Login.css';
 
-
-class RegisterButton extends Component {
-    render() {
+const RegisterButton = () => { 
         return (
-         <div className='body'>
-            <a waves='light' className= 'register' node='a' href=''> Register </a>
-         </div>
+            <Router>
+                <div>
+                    <Link to="/register"><p className="link center">Register</p></Link>
+                    <Route path="/register" component={Register} exact />
+                </div>
+            </Router>  
         )
-    }
+    
 }
 
 export default RegisterButton;
