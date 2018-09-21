@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Button} from 'react-materialize';
 import './Login.css';
 import firebase from 'firebase';
 import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
