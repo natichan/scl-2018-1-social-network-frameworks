@@ -12,7 +12,7 @@ class ButtonsFaceGoo extends Component {
       firebase.auth.FacebookAuthProvider.PROVIDER_ID,
     ],
     callbacks: {
-      signInSuccess: () => false
+      signInSuccessWithAuthResult : () => false
     }
   }
   render() {
