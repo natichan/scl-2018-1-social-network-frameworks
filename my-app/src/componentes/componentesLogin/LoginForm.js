@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Login.css';
 import {Row, Input, Icon, Button, Col} from 'react-materialize'
 import fire from '../../config/firebase';
