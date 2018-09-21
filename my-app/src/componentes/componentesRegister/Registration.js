@@ -2,6 +2,7 @@ import React from 'react';
 import './Register.css';
 import {Row, Input, Icon, Button} from 'react-materialize'
 import {Col} from 'react-materialize'
+import fire from '../../config/firebase'
 
 class InputAdornments extends React.Component {
   constructor(props) {
@@ -32,7 +33,7 @@ class InputAdornments extends React.Component {
 
     <Row className="example">
       <Col s={12} >
-        <Input s={12} value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" placeholder="Email">
+        <Input s={12} value={this.state.email} onChange={this.handleChange} type="email" name="email" placeholder="Email">
           <Icon>account_circle</Icon>
         </Input>
         <Input  s={12} value={this.state.password} onChange={this.handleChange} type="password" name="password"  placeholder="Password">
