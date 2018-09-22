@@ -58,6 +58,16 @@ class App extends Component {
             <Slide src={imgJ}></Slide>
           </Slider> 
         </Col>
+        <Col l={12}>
+          <Input type='text'placeholder='¿Que tal tu día Veggie?'  s={12} 
+                    // autoFocus={true}
+                    // multiline={true}
+                    // rowsMax={3}
+                    onChange={event => this.setState({ text: event.target.value })}
+                    value={this.state.text}
+                    onKeyPress={this.onSubmit}/>
+        </Col>
+
       </Row> 
     );
   }
