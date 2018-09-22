@@ -13,7 +13,19 @@ class App extends Component {
 	text: "", 
 	messages: [] }
   }
+  componentDidMount() {
+ 
+    this.getMessages()
+  }
 
+  onSubmit = event => {
+    if (event.charCode === 13 && this.state.text !== "") {
+      this.writeMessageToRS(this.state.text)
+      this.setState({ text: "" })
+    }
+  }
+
+  
   
   }
 
