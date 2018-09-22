@@ -6,7 +6,10 @@ import './../App.css'
 class Friends extends Component {
     render() {
       return (
+        <Row  className='green'>
+          <Navbar /> 
 
+        </Row> 
       );
     }
   }
