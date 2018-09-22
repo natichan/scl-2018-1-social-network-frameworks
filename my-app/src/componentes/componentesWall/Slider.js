@@ -24,7 +24,32 @@ class App extends Component {
       this.setState({ text: "" })
     }
   }
+  writeMessageToRS = message => {
+    firebase
+      .database()
+      .ref("messages/")
+      .push({
+        text: message
+      })
+  }
 
+  getMessages = () => {
+    var messagesDB = firebase
+      .database()
+      .ref("messages/")
+      // cantidad de comentarios que se pueden visualizar 
+      .limitToLast(500)
+    messagesDB.on("value", snapshot => {
+      let newMessages = []
+      snapshot.forEach(child => {
+        var message = child.val()
+        newMessages.push({ key: message.id,text: message.text })
+      })
+      this.setState({ messages: newMessages })
+    })
+  }
+
+    
   
   
   }
