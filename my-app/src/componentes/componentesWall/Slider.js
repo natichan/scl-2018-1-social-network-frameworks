@@ -10,11 +10,10 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = { 
-	text: "", 
-	messages: [] }
+      text: "", 
+      messages: [] }
   }
   componentDidMount() {
- 
     this.getMessages()
   }
 
