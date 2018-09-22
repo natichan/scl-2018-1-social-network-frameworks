@@ -67,7 +67,6 @@ class App extends Component {
 
           <Col  s={12} >
             <form >
-              
               {this.state.messages.map(message =>
                 <div ><br/><p className='white divPost 'key={message.id}>{message.text}</p></div>
               )}
@@ -76,9 +75,6 @@ class App extends Component {
       </Row> 
     );
   }
-    
-  
-  
   }
 
 export default App;
