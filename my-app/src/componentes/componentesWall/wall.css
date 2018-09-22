@@ -32,6 +32,6 @@ body{
     opacity: 0.5;
     padding: 1em;
     height: 7em;
-    /* word-break: break-all;
-    word-wrap: break-word; */
+    word-break: break-all;
+    word-wrap: break-word;
 }
