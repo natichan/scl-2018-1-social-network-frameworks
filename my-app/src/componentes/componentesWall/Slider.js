@@ -60,9 +60,9 @@ class App extends Component {
         </Col>
         <Col l={12}>
           <Input type='text'placeholder='¿Que tal tu día Veggie?'  s={12} 
-                    onChange={event => this.setState({ text: event.target.value })}
-                    value={this.state.text}
-                    onKeyPress={this.onSubmit}/>
+            onChange={event => this.setState({ text: event.target.value })}
+            value={this.state.text}
+            onKeyPress={this.onSubmit}/>
         </Col>
 
           <Col  s={12} >
