@@ -6,8 +6,8 @@ class Wall extends Component {
     render() {
       return (
         <div>
-          <Navbar />
-          <Slider/>
+          <Navbar /> 
+          {/* <Slider/> */}
         </div> 
       );
     }
