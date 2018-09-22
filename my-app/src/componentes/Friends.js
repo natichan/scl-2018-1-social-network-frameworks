@@ -6,7 +6,7 @@ import './../App.css'
 class Friends extends Component {
     render() {
       return (
-        <Row  className='green'>
+        <Row>
           <Navbar /> 
           <Col className='RowFriends' s={12}>
             <Card className=' card '></Card>
