@@ -27,10 +27,12 @@
     font-size: 1.5em;
 }
 .ButtonLarge1 {
-    width: 100%;
+    width: 8em;
     text-align: center;
     background-color: #6ea328;
     margin-top: 7%;
+    margin-left: 1%;
+    padding: 1%;
 }
 .card{
     height: 50%;
