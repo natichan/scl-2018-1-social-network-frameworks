@@ -7,6 +7,13 @@ import firebase from "firebase"
 import './wall.css'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { 
+	text: "", 
+	messages: [] }
+  }
+
   
   }
 
