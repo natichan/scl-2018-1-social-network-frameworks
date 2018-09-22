@@ -35,3 +35,6 @@ body{
     word-break: break-all;
     word-wrap: break-word;
 }
+.inpt{
+    width: 100%;
+}
