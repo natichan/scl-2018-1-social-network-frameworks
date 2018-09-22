@@ -48,7 +48,19 @@ class App extends Component {
       this.setState({ messages: newMessages })
     })
   }
-
+  render() {
+    return (
+      <Row className='  inputxt '>
+        <Col  s={12} className=' imgu ' >
+          <Slider >
+            <Slide className='imgu' src={imgh}></Slide>
+            <Slide src={imgI}></Slide>
+            <Slide src={imgJ}></Slide>
+          </Slider> 
+        </Col>
+      </Row> 
+    );
+  }
     
   
   
