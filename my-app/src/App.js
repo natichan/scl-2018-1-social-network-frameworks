@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//simport Wall from './componentes/Wall';
+// import Wall from './componentes/Wall';
 import Auth from './componentes/Auth'
 
 class App extends Component {
