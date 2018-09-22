@@ -24,7 +24,7 @@ class App extends Component {
     }
   }
   writeMessageToRS = message => {
-   window.firebase
+   firebase
       .database()
       .ref("messages/")
       .push({
