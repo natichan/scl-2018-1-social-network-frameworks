@@ -43,10 +43,13 @@ constructor(props) {
       </Input>
       <Input s={12} type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange}>
         <Icon>lock</Icon>
-      </Input>   
-      <Button className='ButtonLarge1' waves='light' node='a' href='' type="submit" onClick={this.login}> Login </Button>
-      <Button className='ButtonLarge1' waves='light' node='a' onClick={this.signup}> REGISTRATE </Button>
+      </Input>
+      <div className="center">
+      <Button s={6} className='ButtonLarge1' waves='light' node='a' href='' type="submit" onClick={this.login}> Login </Button>
+      <Button s={6} className='ButtonLarge1' waves='light' node='a' onClick={this.signup}> REGISTER*</Button>
+      </div>
     </Col>
+    
     </Row>
     );
   }
