@@ -24,7 +24,7 @@ class App extends Component {
     }
   }
   writeMessageToRS = message => {
-    firebase
+   window.firebase
       .database()
       .ref("messages/")
       .push({
@@ -64,13 +64,13 @@ class App extends Component {
             onKeyPress={this.onSubmit}/>
         </Col>
 
-          <Col  s={12} >
-            <form >
-              {this.state.messages.map(message =>
-                <div ><br/><p className='white divPost 'key={message.id}>{message.text}</p></div>
-              )}
-            </form>
-          </Col>
+        <Col  s={12} >
+          <form >
+            {this.state.messages.map(message =>
+              <div ><br/><p className='white divPost 'key={message.id}>{message.text}</p></div>
+            )}
+          </form>
+        </Col>
       </Row> 
     );
   }
