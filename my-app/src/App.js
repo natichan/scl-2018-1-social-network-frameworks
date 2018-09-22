@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Wall from './componentes/Wall';
-// import Auth from './componentes/Auth'
+import Auth from './componentes/Auth'
 
 class App extends Component {
   render() {
     return (
      <div>
-       {/* <Auth /> */}
-       <Wall/>
+       <Auth />
+       {/* <Wall/> */}
      </div>
     )
   };
