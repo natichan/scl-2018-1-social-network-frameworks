@@ -40,9 +40,14 @@ class App extends Component {
       .limitToLast(15)
     messagesDB.on("value", snapshot => {
       let newMessages = []
+      console.log('snapshot:',snapshot);
+      let key=0;
       snapshot.forEach(child => {
+
         var message = child.val()
-        newMessages.push({ key: message.id,text: message.text })
+        console.log('message:',message);
+        newMessages.push({ key: key,text: message.text })
+        key++;
       })
       this.setState({ messages: newMessages })
     })
@@ -64,10 +69,14 @@ class App extends Component {
             onKeyPress={this.onSubmit}/>
         </Col>
 
-        <Col  s={12} >
-          <form >
+        <Col   s={12}  id='post_list' >
+          <form id='form_01'>
             {this.state.messages.map(message =>
-              <div ><br/><p className=' divPost 'key={message.id}>{message.text}</p></div>
+            // identificar con id cada post
+              <div id={'div_'+message.key} key={'div_'+message.key} >
+                <br/>
+                <p className=' divPost '>{message.text}</p>
+              </div>
             )}
           </form>
         </Col>
