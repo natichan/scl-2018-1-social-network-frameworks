@@ -6,7 +6,7 @@
 }
 
 body{
-    background-image: linear-gradient(to bottom right,black, gray,black);
-    background-repeat: no-repeat;
+    background: rgb(1,1,1,0.8);
+    background-repeat: repeat;
     background-size: cover;
 }
