@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Form from './componentsProfile/Form';
 import Picture from './componentsProfile/Picture';
 import Navbar from './componentesWall/Navbar';
-import ExamplePic from '../assets/img/foto-perfil.jpg';
 import {Row, Card, Col} from 'react-materialize';
 
 class Profile extends Component {
@@ -10,11 +9,10 @@ class Profile extends Component {
       return (
         <div>
             <Navbar />
-            <Picture photo = {ExamplePic}/>
             <Row>
-              <Col s={12}>
+              <Col>
                 <Card className='card'>
-                <Form />
+                <Picture />
             </Card>
               </Col> 
             </Row>
