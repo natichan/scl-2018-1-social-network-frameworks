@@ -3,7 +3,6 @@ import Img from './componentesLogin/Img';
 import ImagenLogo from '../assets/img/logo.png'
 import ButtonFG from './componentesLogin/ButtonFG'
 import LoginForm from './componentesLogin/LoginForm'
-import RegisterButton from './componentesLogin/RegisterButton';
 import {Row, Card, Col} from 'react-materialize';
 
 
@@ -16,7 +15,7 @@ class Login extends Component {
               <Img photo= {ImagenLogo}/>
               <LoginForm />
               <ButtonFG />
-              <RegisterButton />       
+              <p className="center">*Don't have an account yet? Press Register button to save your email and password</p>
             </Card> 
           </Col>
         </Row>

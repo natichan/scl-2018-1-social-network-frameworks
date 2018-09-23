@@ -8,6 +8,7 @@ constructor(props) {
     super(props);
     this.login = this.login.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.signup = this.signup.bind(this);
     this.state = {
       email: '',
       password: ''
@@ -25,7 +26,14 @@ constructor(props) {
         console.log(error);
       });
   }
-
+  signup(e){
+    e.preventDefault();
+    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
+    }).then((u)=>{console.log(u)})
+    .catch((error) => {
+        console.log(error);
+      })
+  }
   render() {
     return ( 
     <Row className="example">
@@ -35,9 +43,13 @@ constructor(props) {
       </Input>
       <Input s={12} type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange}>
         <Icon>lock</Icon>
-      </Input>   
-      <Button className='ButtonLarge1' waves='light' node='a' href='' type="submit" onClick={this.login}> Login </Button>
+      </Input>
+      <div className="center">
+      <Button s={6} className='ButtonLarge1' waves='light' node='a' href='' type="submit" onClick={this.login}> Login </Button>
+      <Button s={6} className='ButtonLarge1' waves='light' node='a' onClick={this.signup}> REGISTER*</Button>
+      </div>
     </Col>
+    
     </Row>
     );
   }
