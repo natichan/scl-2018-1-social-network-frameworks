@@ -37,7 +37,7 @@ class App extends Component {
       .database()
       .ref("messages/")
       // cantidad de comentarios que se pueden visualizar 
-      .limitToLast(500)
+      .limitToLast(15)
     messagesDB.on("value", snapshot => {
       let newMessages = []
       snapshot.forEach(child => {
