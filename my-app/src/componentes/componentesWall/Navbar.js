@@ -4,7 +4,6 @@ import LogoNavbar from './LogoNavbar';
 import ImageLogo from '../../assets/img/logotipoHorizontalBordeBlanco (1).png'
 import './wall.css'
 import fire from '../../config/firebase';
-import { NavLink } from "react-router-dom";
 
 
 class NavbarComponent extends Component {
@@ -16,7 +15,6 @@ class NavbarComponent extends Component {
      logout() {
         fire.auth().signOut();
         console.log('click');
-        var result = Object.getOwnPropertyDescriptor(window, 'location');
         window.location = '/';
     }
     
