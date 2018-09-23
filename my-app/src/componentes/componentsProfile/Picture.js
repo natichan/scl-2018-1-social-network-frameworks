@@ -4,16 +4,31 @@ import FileUploader from "react-firebase-file-uploader";
 import './profile.css';
 import {Row, Col} from 'react-materialize';
 
-class ProfilePage extends Component {
-  state = {
+// const storage = firebase.storage().ref()
+
+class ProfilePage extends React.Component {
+  constructor(){
+    super()
+  this.state = {
     username: "",
     aboutMe:"",
     avatar: "",
     isUploading: false,
     progress: 0,
     avatarURL: ""
-  };
+  }
+  // this.getImage('avatarURL')
+}
 
+/* getImage (image) {
+  let { state } = this
+  storage.child(`${image}.png`).getDownloadURL().then((url) => {
+    state[image] = url
+    this.setState(state)
+  }).catch((error) => {
+    // Handle any errors
+  })
+} */
   handleChangeUsername = event =>
     this.setState({ username: event.target.value });
 
@@ -44,10 +59,12 @@ class ProfilePage extends Component {
       <Row>
         <Col>
         <form>
-          {this.state.isUploading && <p>Progress: {this.state.progress}</p>}
+        <label>Profile picture:</label>
+          {this.state.isUploading && 
+          <p>Progress: {this.state.progress}</p>}
           {this.state.avatarURL && <img src={this.state.avatarURL} />}
           <label className="label">
-          Choose your profile picture
+          Choose folder
             <FileUploader
               hidden
               accept="image/*"
@@ -65,7 +82,6 @@ class ProfilePage extends Component {
             value={this.state.username}
             name="username"
             onChange={this.handleChangeUsername}
-            storageRef={firebase.storage().ref('images')}
           />
            <label>About me:</label>
           <input
@@ -73,8 +89,8 @@ class ProfilePage extends Component {
             value={this.state.aboutMe}
             name="aboutMe"
             onChange={this.handleChangeAboutMe}
-            storageRef={firebase.storage().ref('images')}
           />
+          {/* <img src={ this.state.avatarURL } alt="profile pic" /> */}
           </Col>
         </form>
         </Col>
