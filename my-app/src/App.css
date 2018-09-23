@@ -6,7 +6,7 @@
 }
 
 body{
+    background-image: linear-gradient(to bottom right,black, gray,black);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
 }
