@@ -1,12 +1,13 @@
-body{
-    background-image: linear-gradient(to bottom right,black, gray,black);
-}
+
+
+
 .logo{
     height: 2em;
 }
 .navbar{
     background-color: #6ea328;
 }
+
 .icon{
     font-size: 55px;
     color: rgba(0, 0, 0, 0.651);
@@ -22,10 +23,13 @@ body{
     margin-top: 1em;
 
 }
+.textIcon{
+    text-align: center
+}
 @media (min-width: 1000px) {
     .textIcon{
         display: none;
-    }
+text-align: center;    }
 }
 
 .divPost{
@@ -39,4 +43,8 @@ body{
 .inpt{
     width: 100%;
     color: white;
+}
+#post_list{
+    padding-top: 2%;
+    display: inline-block;
 }
