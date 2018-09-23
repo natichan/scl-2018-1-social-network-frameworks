@@ -4,6 +4,7 @@ import LogoNavbar from './LogoNavbar';
 import ImageLogo from '../../assets/img/logotipoHorizontalBordeBlanco (1).png'
 import './wall.css'
 import fire from '../../config/firebase';
+import { NavLink } from "react-router-dom";
 
 
 class NavbarComponent extends Component {
@@ -12,32 +13,20 @@ class NavbarComponent extends Component {
         this.logout = this.logout.bind(this);
     }
 
-    logout() {
+     logout() {
         fire.auth().signOut();
+        console.log('click');
+        var result = Object.getOwnPropertyDescriptor(window, 'location');
+        window.location = '/';
     }
     
     render() {
         return (
             <Navbar brand={<LogoNavbar photo = {ImageLogo} />} className="navbar" right>   
-                <NavItem >
-                    <Icon>home</Icon>
-                    <p className="textIcon">Wall</p>
-                </NavItem>
-            
-                <NavItem >
-                    <Icon>person</Icon>
-                    <p className="textIcon">Profile</p>
-                </NavItem>
-
-                <NavItem >
-                    <Icon>person_add</Icon>
-                    <p className="textIcon">Friends</p>
-                </NavItem>
-
-                <NavItem onClick={this.logout} >
-                    <Icon>keyboard_tab</Icon>
-                    <p className="textIcon">Log out</p>
-                </NavItem>
+                <NavItem href='/Wall'><span className="textIcon">Wall</span><Icon>home</Icon></NavItem>
+                <NavItem href='/Profile'><span className="textIcon">Profile</span><Icon>person</Icon></NavItem>
+                <NavItem href='/Friends'><span className="textIcon">Friends</span><Icon>person_add</Icon></NavItem>
+                <NavItem onClick={this.logout} ><span className="textIcon">Log out</span><Icon>keyboard_tab</Icon></NavItem>       
             </Navbar>
         )
     }
