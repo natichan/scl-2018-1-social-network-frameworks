@@ -29,8 +29,9 @@ body{
 }
 
 .divPost{
-    opacity: 0.5;
+    
     padding: 1em;
+    background-color: rgb(231, 226, 226,1);
     height: 7em;
     word-break: break-all;
     word-wrap: break-word;
