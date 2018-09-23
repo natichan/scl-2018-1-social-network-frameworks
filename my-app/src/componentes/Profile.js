@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Form from './componentsProfile/Form';
 import Picture from './componentsProfile/Picture';
 import Navbar from './componentesWall/Navbar';
 import {Row, Card, Col} from 'react-materialize';
