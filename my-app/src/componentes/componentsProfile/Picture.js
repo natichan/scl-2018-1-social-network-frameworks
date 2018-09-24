@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import firebase from '../../config/firebase';
 import FileUploader from "react-firebase-file-uploader";
 import './profile.css';
@@ -62,7 +62,7 @@ class ProfilePage extends React.Component {
         <label>Profile picture:</label>
           {this.state.isUploading && 
           <p>Progress: {this.state.progress}</p>}
-          {this.state.avatarURL && <img src={this.state.avatarURL} />}
+          {this.state.avatarURL && <img alt="" src={this.state.avatarURL} />}
           <label className="label">
           Choose folder
             <FileUploader
