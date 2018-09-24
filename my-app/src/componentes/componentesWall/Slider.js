@@ -3,6 +3,7 @@ import {Row, Slider, Slide, Col, Input} from 'react-materialize'
 import imgh from './../../assets/img/veganHamburguer.jpg'
 import imgI from './../../assets/img/vegan-food-selection-t.jpg'
 import imgJ from './../../assets/img/green-kitchen-stories-meal-inspiration.jpg'
+import deff from './../../assets/img/default.png'
 import fire from "./../../config/firebase"
 import './wall.css'
 
@@ -11,6 +12,8 @@ class App extends Component {
     super(props)
     this.state = { 
       text: "", 
+      url:"",
+      name:"",
       messages: [] }
   }
   componentDidMount() {
@@ -19,16 +22,22 @@ class App extends Component {
 
   onSubmit = event => {
     if (event.charCode === 13 && this.state.text !== "") {
-      this.writeMessageToRS(this.state.text)
-      this.setState({ text: "" })
+      
+      let user=fire.auth().currentUser;
+      var url=user.photoURL;
+      var name=user.displayName;
+      this.writeMessageToRS(this.state.text,url,name)
+      this.setState({ text: "",url:"" , name:""})
     }
   }
-  writeMessageToRS = message => {
+  writeMessageToRS = (message,url,name) => {
    fire
       .database()
       .ref("messages/")
       .push({
-        text: message
+        text: message,
+        url:url,
+        name:name
       })
   }
 
@@ -40,13 +49,18 @@ class App extends Component {
       .limitToLast(15)
     messagesDB.on("value", snapshot => {
       let newMessages = []
+     
       console.log('snapshot:',snapshot);
       let key=0;
       snapshot.forEach(child => {
 
         var message = child.val()
         console.log('message:',message);
-        newMessages.push({ key: key,text: message.text })
+        if(!message.url)
+        message.url="";
+        if(!message.name)
+        message.name="";
+        newMessages.push({ key: key,text: message.text,url:message.url,name:message.name })
         key++;
       })
       this.setState({ messages: newMessages })
@@ -75,7 +89,9 @@ class App extends Component {
             // identificar con id cada post
               <div id={'div_'+message.key} key={'div_'+message.key} >
                 <br/>
-                <p className=' divPost '>{message.text}</p>
+                {/* <img className='circle' src={message.url==''? deff:message.url}  height="42" width="42"></img> */}
+                {/* deff es la img para cuando no tiene  */}
+                <p className=' divPost '><img className='circle' src={message.url==''? deff:message.url}  height="42" width="42"></img><b>{message.name+" : "}</b>{ message.text}</p>
               </div>
             )}
           </form>
