@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import Navbar from './componentesWall/Navbar'
-import {Row, Card, Col} from 'react-materialize';
-import './../App.css'
+import {Row, Card, Col, Button, Icon} from 'react-materialize';
+import One from '../assets/img/blake.jpeg';
+import Img from './componentesFriends/Img'
+import './componentesFriends/friends.css'
 
 class Friends extends Component {
     render() {
       return (
         <Row>
-          <Navbar /> 
-          <Col className='RowFriends' s={12}>
-            <Card className=' card '></Card>
-          </Col>
+          <Navbar />
+          <Img photo={One} />
+          <Button floating large className='red' waves='light' icon='add' />
+          <Button waves='light'>button<Icon left>add</Icon></Button>
+
         </Row> 
       );
     }
