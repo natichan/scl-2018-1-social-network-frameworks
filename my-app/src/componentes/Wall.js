@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
- import Navbar from './componentesWall/Navbar'
- import Slider from './componentesWall/Slider'
+import Navbar from './componentesWall/Navbar'
+import Slider from './componentesWall/Slider'
 
 class Wall extends Component {
     render() {
