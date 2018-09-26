@@ -36,15 +36,21 @@ text-align: center;    }
     
     padding: 1em;
     background-color: rgb(231, 226, 226,1);
-    height: 9em;
-    word-break: break-all;
-    word-wrap: break-word;
+    height: auto;
+    /* word-break: break-all;
+    word-wrap: break-word; */
+    word-break: normal !important;
+    text-align: justify;
 }
-.inpt{
+.divinpt{
     width: 100%;
-    color: white;
+
 }
 #post_list{
     padding-top: 2%;
     display: inline-block;
+}
+.inpt2::placeholder{
+color: #6ea328;
+
 }
