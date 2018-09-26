@@ -54,3 +54,21 @@ text-align: center;    }
 color: #6ea328;
 
 }
+.like{
+    width: 3em;
+    padding-left: 0%;
+    padding-right: 0%;
+    box-shadow: none;
+    background-color: transparent;
+}
+.like:hover{
+    background-color: transparent;
+    box-shadow: none;
+    
+}
+.iconolike{
+color: #6ea328;
+}
+.iconolike:hover{
+color: #D75A00;
+}
