@@ -15,8 +15,8 @@ class NavbarComponent extends Component {
      logout() {
         fire.auth().signOut();
         // console.log('click');
-        // window.location = '/';
-        document.location.href = {process:env.PUBLIC_URL + '/'};
+        window.location = 'https://natichan.github.io/scl-2018-1-social-network-frameworks/';
+        
     }
     
     render() {
