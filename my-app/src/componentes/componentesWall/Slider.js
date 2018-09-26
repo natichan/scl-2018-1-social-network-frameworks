@@ -76,8 +76,8 @@ class App extends Component {
             <Slide src={imgJ}></Slide>
           </Slider> 
         </Col>
-        <Col l={12}className='inpt'>
-          <Input  type='text'placeholder='¿💚 Que tal tu día Veggie 💚? 😀'  s={12} 
+        <Col l={12}className='divinpt'>
+          <Input className='inpt2'  type='text'placeholder='¿💚 Que tal tu día Veggie 💚? '  s={12} 
             onChange={event => this.setState({ text: event.target.value })}
             value={this.state.text}
             onKeyPress={this.onSubmit}/>
@@ -92,6 +92,7 @@ class App extends Component {
                 {/* <img className='circle' src={message.url==''? deff:message.url}  height="42" width="42"></img> */}
                 {/* deff es la img para cuando no tiene  */}
                 <p className=' divPost '><img className='circle' src={message.url==''? deff:message.url}  height="42" width="42"></img><b>{message.name+" : "}</b>{ message.text}</p>
+
               </div>
             )}
           </form>
