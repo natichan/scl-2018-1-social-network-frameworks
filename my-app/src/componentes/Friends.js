@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './componentesWall/Navbar'
-import {Row, Card, Col, Button, Icon} from 'react-materialize';
+import {Row, Button, Icon} from 'react-materialize';
 import One from '../assets/img/blake.jpeg';
 import Img from './componentesFriends/Img'
 import './componentesFriends/friends.css'
