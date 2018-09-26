@@ -3,6 +3,7 @@ import Picture from './componentsProfile/Picture';
 import Navbar from './componentesWall/Navbar';
 import {Row, Card, Col} from 'react-materialize';
 // import Form from './componentsProfile/Form'
+import ProfilePic from '../assets/img/foto-perfil.jpg';
 
 class Profile extends Component {
     render() {
@@ -10,11 +11,8 @@ class Profile extends Component {
         <div>
             <Navbar />
             <Row>
-              <Col>
-                <Card className='card'>
-                <Picture />
-            </Card>
-              </Col> 
+                <Picture photo={ProfilePic}/>
+                <div class="divider grey"></div>
             </Row>
         </div> 
       );
