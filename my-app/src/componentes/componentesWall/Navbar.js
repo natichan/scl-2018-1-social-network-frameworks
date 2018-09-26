@@ -14,8 +14,9 @@ class NavbarComponent extends Component {
 
      logout() {
         fire.auth().signOut();
-        console.log('click');
-        window.location = {process.env.PUBLIC_URL + '/'};
+        // console.log('click');
+        // window.location = '/';
+        document.location.href = {process:env.PUBLIC_URL + '/'};
     }
     
     render() {
