@@ -10,10 +10,25 @@ class Friends extends Component {
       return (
         <Row>
           <Navbar />
-          <Img photo={One} />
-          <Button floating large className='red' waves='light' icon='add' />
-          <Button waves='light'>button<Icon left>add</Icon></Button>
-
+          <div>
+            <div className='center did'>
+              <Img photo={One} />
+              <Button className='colorButton'> Friend<Icon left>add</Icon></Button>
+            </div>
+            <div className='center did'>
+            <Img photo={One} />
+              <Button className='colorButton'> Friend<Icon left>add</Icon></Button> 
+            </div>
+            <div className='center did'>
+            <Img photo={One} />
+              <Button className='colorButton'> Friend<Icon left>add</Icon></Button> 
+            </div>
+            <div className='center did'>
+            <Img photo={One} />
+              <Button className='colorButton'> Friend<Icon left>add</Icon></Button> 
+            </div>
+          </div>
+          
         </Row> 
       );
     }

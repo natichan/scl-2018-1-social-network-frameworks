@@ -21,7 +21,7 @@ class NavbarComponent extends Component {
     
     render() {
         return (
-            <Navbar brand={<LogoNavbar photo = {ImageLogo} />} className="navbar" right>   
+            <Navbar brand={<LogoNavbar photo = {ImageLogo} />} className="navbar" right fixed>   
                 <NavItem href={process.env.PUBLIC_URL + '/Wall'}><span className="textIcon">Wall</span><Icon>home</Icon></NavItem>
                 <NavItem href={process.env.PUBLIC_URL + '/Profile'}><span className="textIcon">Profile</span><Icon>person</Icon></NavItem>
                 <NavItem href={process.env.PUBLIC_URL + '/Friends'}><span className="textIcon">Friends</span><Icon>person_add</Icon></NavItem>
