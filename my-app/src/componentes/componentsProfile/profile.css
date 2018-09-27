@@ -4,6 +4,11 @@
     height: 150px;
     border-image: 20% white;
 }
+.up {
+    margin-top: 2%;
+    height: 150px;
+    width: 50%;
+}
 header{
     background-image: url(../../assets/img/vegan-food-selection-t.jpg);
     background-size: cover;
@@ -21,9 +26,7 @@ header{
     background-color: #6ea328;
     color: white;
     padding: 1em;
-    margin: 3% 10% 4% 10% ;
     border-radius: 4px; 
-    cursor: pointer;
 }
 h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -41,6 +44,8 @@ h1{
     }
     .picture{
         height: 200px !important;
-        
+    }
+    h1{
+        font-size: 30px !important;
     }
 }
