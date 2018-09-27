@@ -12,9 +12,11 @@
 .did{
     background-color: #dfe7d5 ;
     margin: 10% 20% 0% 20%; 
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+    width: 60%;
 
 }
 .colorButton{
     background-color: #6ea328;
 }
+
