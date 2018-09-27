@@ -91,7 +91,7 @@ class App extends Component {
                 <br/>
                 {/* <img className='circle' src={message.url==''? deff:message.url}  height="42" width="42"></img> */}
                 {/* deff es la img para cuando no tiene  */}
-                <p className=' divPost '><img className='circle' src={message.url==''? deff:message.url}  height="42" width="42"></img><b>{message.name+" : "}</b>{ message.text}</p>
+                <p className=' divPost '><img className='circle' alt='foto' src={message.url===''? deff:message.url}  height="42" width="42"></img><b>{message.name+" : "}</b>{ message.text}</p>
                 <a className=' btn formaticondiv'><i className="material-icons iconolike ">thumb_up_alt</i></a>
                 <a className='formaticondiv btn'><i className="material-icons blue-text">border_color</i></a>
                 <a className=' btn formaticondiv'><i className="material-icons icondelet">delete</i></a>
