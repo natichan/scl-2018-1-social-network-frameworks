@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './componentesWall/Navbar'
+
 import {Row, Button, Col, Icon} from 'react-materialize';
 import './componentesFriends/friends.css';
 import fire from "./../config/firebase";

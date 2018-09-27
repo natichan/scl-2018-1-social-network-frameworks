@@ -10,8 +10,6 @@ class ProfilePage extends React.Component {
   constructor(){
     super()
   this.state = {
-    username: "",
-    aboutMe:"",
     avatar: "",
     isUploading: false,
     progress: 0,
@@ -59,10 +57,9 @@ class ProfilePage extends React.Component {
       <Row>
         <Col>
         <form>
-        <label>Profile picture:</label>
           {this.state.isUploading && 
           <p>Progress: {this.state.progress}</p>}
-          {this.state.avatarURL && <img alt="" src={this.state.avatarURL} />}
+          {this.state.avatarURL && <img alt="" src={this.state.avatarURL} className="up"/>}
           <label className="label">
           Choose folder
             <FileUploader
@@ -75,23 +72,6 @@ class ProfilePage extends React.Component {
               onProgress={this.handleProgress}
             />
           </label>
-          <Col>
-          <label>Username:</label>
-          <input
-            type="text"
-            value={this.state.username}
-            name="username"
-            onChange={this.handleChangeUsername}
-          />
-           <label>About me:</label>
-          <input
-            type="text"
-            value={this.state.aboutMe}
-            name="aboutMe"
-            onChange={this.handleChangeAboutMe}
-          />
-          {/* <img src={ this.state.avatarURL } alt="profile pic" /> */}
-          </Col>
         </form>
         </Col>
       </Row>
@@ -101,14 +81,3 @@ class ProfilePage extends React.Component {
 }
 
 export default ProfilePage;
-/* import './profile.css';
-
-const Picture = (props) => {
-  return (
-    <div className="body">
-    <img src= {props.photo} alt='' className="picture" />
-    </div>
-  );
-};
-
-export default Picture; */

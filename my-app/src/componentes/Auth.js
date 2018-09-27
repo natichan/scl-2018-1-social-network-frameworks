@@ -19,10 +19,6 @@ class Auth extends Component {
   authListener() {
     fire.auth().onAuthStateChanged((user) => {
       console.log(user);
-      // toma la url de local storage
-      // if(user)
-      // if(user.photoURL)
-      // localStorage.setItem('myData', user.photoURL);
       if (user) {
         this.setState({ user });
       } else {

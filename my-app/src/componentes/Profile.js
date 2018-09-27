@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Picture from './componentsProfile/Picture';
 import Navbar from './componentesWall/Navbar';
-import {Row, Card, Col} from 'react-materialize';
+import {Row} from 'react-materialize';
+import Form from './componentsProfile/Form'
 
 class Profile extends Component {
     render() {
@@ -9,11 +9,7 @@ class Profile extends Component {
         <div>
             <Navbar />
             <Row>
-              <Col>
-                <Card className='card'>
-                <Picture />
-            </Card>
-              </Col> 
+                <Form />
             </Row>
         </div> 
       );
