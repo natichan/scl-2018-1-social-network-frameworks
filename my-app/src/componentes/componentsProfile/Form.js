@@ -11,6 +11,7 @@ class Form extends Component {
     this.state = {
         name: '',
         photo: '',
+        email: '',
     };
 }
 
@@ -20,6 +21,7 @@ componentDidMount() {
         this.setState({
             name: user.displayName,
             photo: user.photoURL,
+            email: user.email
         });
     });          
 }
@@ -29,14 +31,14 @@ componentDidMount() {
             <header>
               <Row className="center">
                 <Col s={12}>
-                <img className="picture" src={this.state.photo === ""? deff: this.state.photo} alt="user" value={this.state.photo}></img>
+                <img className="picture" src={this.state.photo ? this.state.photo : deff} alt="user" value={this.state.photo}></img>
                 </Col>
               </Row>
             </header>
             <main>
               <Row className="center">
                 <Col s={12}>
-                <h1>{this.state.name}</h1>
+                <h1>{this.state.name ? this.state.name : this.state.email}</h1>
                 </Col>
               </Row>
             </main>
