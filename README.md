@@ -1,10 +1,13 @@
-# Rehaciendo tu red social usando librerías y frameworks
+# Veggie Experience
+
+Veggie experience es  una red social para vegetarianos, y personas interesadas en este estilo de vida. Con este producto queremos proporcionarles a los usuarios un medio de comunicación donde puedan apoyarse e intercambiar sus experiencias, inquietudes y descubrimientos.
+
+En definitiva la principal funcionalidad del producto es brindar un medio de comunicación eficaz, crear una red donde las personas puedan compartir sus experiencias, demostrar que no son minoría, que existe una gran comunidad que necesita apoyo y ser escuchada.
 
 
 ## Introducción
 
-En este proyecto tuvimos la oportunidad de _re-escribir_ un proyecto  de
-la _red social_, pero esta vez utilizando [React](https://reactjs.org/).
+En este proyecto tuvimos la oportunidad de _re-escribir_ la [red social](https://github.com/natichan/scl-2018-05-bc-core-pm-socialnetwork), pero esta vez utilizando [React](https://reactjs.org/).
 
 ## Objetivos
 
@@ -20,8 +23,8 @@ web, es muy común tener que enfrentarse a este tipo de escenario donde decidimo
 que lo mejor para seguir evolucionando una
 aplicación es re-escribirla usando una nueva tecnología.
 
-## Entrega
+## Planificación
+ El trabajo en equipo fue fundamental para el desarrollo de este proyecto, por esto usamos [Trello](https://trello.com/b/5cmJL3Er/red-social-con-react) como herramienta para la planificación.
 
-[Proyecto](https://milelym.github.io/scl-2018-1-social-network-frameworks/)
-
-[Trello](https://trello.com/b/5cmJL3Er/red-social-con-react)
+## Desarrollado para
+[Laboratoria](https://www.laboratoria.la/)
