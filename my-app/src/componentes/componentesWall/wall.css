@@ -1,6 +1,3 @@
-
-
-
 .logo{
     height: 2em;
 }
@@ -19,9 +16,7 @@
     width: 90%;
 }
 .imgu{
-
     margin-top: 1em;
-
 }
 .textIcon{
     text-align: center
@@ -31,7 +26,6 @@
         display: none;
 text-align: center;    }
 }
-
 .divPost{
     
     padding: 1em;

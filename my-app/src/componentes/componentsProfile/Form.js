@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import './profile.css';
 import {Row, Col} from 'react-materialize';
 import fire from '../../config/firebase';
-import deff from './../../assets/img/images (2).jpeg';
+import deff from './../../assets/img/default.png';
 import './profile.css';
 
 class Form extends Component {
