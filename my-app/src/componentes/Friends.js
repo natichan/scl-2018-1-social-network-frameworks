@@ -45,7 +45,7 @@ class Friends extends Component {
           <Col className='col s12'>
             {this.state.users.map(users =>
                 <div id={users.key} key={users.key}>
-                    <div  className='center did'><img className='circle ' alt='foto' src={
+                    <div  className='center-align did'><img className='friendsPic circle' alt='foto' src={
                       users.url===''? deff:users.url}
                       height="100" width="100"></img>
                       <p>{users.displayName}</p>
