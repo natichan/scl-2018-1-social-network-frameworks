@@ -50,7 +50,7 @@ class App extends Component {
     messagesDB.on("value", snapshot => {
       let newMessages = []
      
-      console.log('snapshot:',snapshot);
+      // console.log('snapshot:',snapshot);
       let key=0;
       snapshot.forEach(child => {
 
