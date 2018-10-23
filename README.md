@@ -5,6 +5,9 @@ Red social para vegetarianos y personas en interesadas en este tipo de alimentac
 ![screenshot from 2018-10-23 12-34-06](https://user-images.githubusercontent.com/39122711/47372369-fe661280-d6bf-11e8-80f3-41be6cb22432.png)
 
 
+## Desarrollado para
+[Laboratoria](https://www.laboratoria.la/)
+
 ## Introducción
 Veggie experience es  una red social para vegetarianos, y personas interesadas en este estilo de vida. Con este producto queremos proporcionarles a los usuarios un medio de comunicación donde puedan apoyarse e intercambiar sus experiencias, inquietudes y descubrimientos.
 
@@ -29,5 +32,3 @@ aplicación es re-escribirla usando una nueva tecnología.
 ## Planificación
  El trabajo en equipo fue fundamental para el desarrollo de este proyecto, por esto usamos [Trello](https://trello.com/b/5cmJL3Er/red-social-con-react) como herramienta para la planificación.
 
-## Desarrollado para
-[Laboratoria](https://www.laboratoria.la/)
