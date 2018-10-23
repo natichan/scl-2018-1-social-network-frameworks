@@ -55,7 +55,7 @@ class App extends Component {
       snapshot.forEach(child => {
 
         var message = child.val()
-        console.log('message:',message);
+        // console.log('message:',message);
         if(!message.url)
         message.url="";
         if(!message.name)
