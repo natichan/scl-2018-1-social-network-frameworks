@@ -15,7 +15,8 @@ class Login extends Component {
               <Img photo= {ImagenLogo}/>
               <LoginForm />
               <ButtonFG />
-              <p className="center">*Don't have an account yet? Press Register button to save your email and password</p>
+              <p className="center">*Don't have an account yet? Press Register to save your email and password </p>
+              <p className="center">**Full version for android only</p>
             </Card> 
           </Col>
         </Row>
