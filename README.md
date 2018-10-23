@@ -1,11 +1,12 @@
 # Veggie Experience
 
+Red social para vegetarianos y personas en interesadas en este tipo de alimentación, podrás tener tu propia sesión, comentar y hacer amigos que compartan tus inquietudes.
+![screenshot from 2018-10-23 10-25-15](https://user-images.githubusercontent.com/39122711/47363789-0a48d900-d6ae-11e8-84a9-55f125c9d6d8.png)
+
+## Introducción
 Veggie experience es  una red social para vegetarianos, y personas interesadas en este estilo de vida. Con este producto queremos proporcionarles a los usuarios un medio de comunicación donde puedan apoyarse e intercambiar sus experiencias, inquietudes y descubrimientos.
 
 En definitiva la principal funcionalidad del producto es brindar un medio de comunicación eficaz, crear una red donde las personas puedan compartir sus experiencias, demostrar que no son minoría, que existe una gran comunidad que necesita apoyo y ser escuchada.
-
-
-## Introducción
 
 En este proyecto tuvimos la oportunidad de _re-escribir_ la [red social](https://github.com/natichan/scl-2018-05-bc-core-pm-socialnetwork), pero esta vez utilizando [React](https://reactjs.org/).
 
